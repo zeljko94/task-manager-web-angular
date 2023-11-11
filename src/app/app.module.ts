@@ -20,6 +20,8 @@ import { ChartModule } from 'primeng/chart';
 import { DataViewModule } from 'primeng/dataview';
 import { RatingModule } from 'primeng/rating';
 import { PaginatorModule } from 'primeng/paginator';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { MessagesModule } from 'primeng/messages';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -33,6 +35,8 @@ import { PickListModule } from 'primeng/picklist';
 import { CardModule } from 'primeng/card';
 import { BoardDetailsPageComponent } from './pages/board-details-page/board-details-page.component';
 import { TaskDetailsPageComponent } from './pages/task-details-page/task-details-page.component';
+import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { MyProfilePageComponent } from './pages/my-profile-page/my-profile-page.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +48,8 @@ import { TaskDetailsPageComponent } from './pages/task-details-page/task-details
     KanbanPageComponent,
     BoardDetailsPageComponent,
     TaskDetailsPageComponent,
+    SettingsPageComponent,
+    MyProfilePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +73,9 @@ import { TaskDetailsPageComponent } from './pages/task-details-page/task-details
     PaginatorModule,
     InputTextareaModule,
     PickListModule,
-    CardModule
+    CardModule,
+    SplitButtonModule,
+    MessagesModule
   ],
   providers: [
     MessageService

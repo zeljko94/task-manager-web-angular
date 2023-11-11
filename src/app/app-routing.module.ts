@@ -8,6 +8,8 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 import { KanbanPageComponent } from './pages/kanban-page/kanban-page.component';
 import { BoardDetailsPageComponent } from './pages/board-details-page/board-details-page.component';
 import { TaskDetailsPageComponent } from './pages/task-details-page/task-details-page.component';
+import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { MyProfilePageComponent } from './pages/my-profile-page/my-profile-page.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,8 @@ const routes: Routes = [
       { path: 'my-kanban', component: KanbanPageComponent },
       { path: 'board-details/:boardId', component: BoardDetailsPageComponent },
       { path: 'task-details/:taskId', component: TaskDetailsPageComponent },
+      { path: 'settings', component: SettingsPageComponent },
+      { path: 'my-profile', component: MyProfilePageComponent },
     ]
   }
 ];

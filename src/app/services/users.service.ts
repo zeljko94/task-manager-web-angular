@@ -10,7 +10,7 @@ export class UsersService {
   constructor(private http: HttpClient) { }
 
 
-  getUsers() {
+  getUsers(): Promise<User[]> {
       return this.http.get<any>('assets/demo/data/users.json')
           .toPromise()
           .then(res => res.data as User[])
@@ -22,6 +22,14 @@ export class UsersService {
       .then(users => {
         const userWithEmail = users.find(user => user.email === email);
         return !!userWithEmail; 
+      });
+  }
+
+  getByEmailAndPassword(email: string, password: string): Promise<User | undefined> {
+    return this.getUsers()
+      .then(users => {
+        const user = users.find(user => user.email === email && user.password === password);
+        return user; 
       });
   }
 }

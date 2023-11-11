@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { UsersService } from './users.service';
 import { User } from '../models/user';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ export class AuthService {
 
   userKey = "USER";
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService, private router: Router) { }
 
 
   getLoggedInUser() {
@@ -22,11 +23,18 @@ export class AuthService {
     // return 
   }
 
+  checkLogin(email: string, password: string) {
+    return this.usersService.getByEmailAndPassword(email, password)
+      .then(user => {return user; });
+  }
+
   login(user: User) {
     localStorage.setItem(this.userKey, JSON.stringify(user));
+    this.router.navigate(['']);
   }
 
   logout() {
     localStorage.removeItem(this.userKey);
+    this.router.navigate(['/login']);
   }
 }

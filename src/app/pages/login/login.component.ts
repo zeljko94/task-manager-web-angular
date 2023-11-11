@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Message, MessageService } from 'primeng/api';
 import { LayoutService } from 'src/app/layout/service/app.layout.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +18,25 @@ import { LayoutService } from 'src/app/layout/service/app.layout.service';
 export class LoginComponent {
   valCheck: string[] = ['remember'];
 
+  email!: string;
   password!: string;
+  msgs: Message[] = [];
 
-  constructor(public layoutService: LayoutService) { }
+  constructor(private authService: AuthService, public layoutService: LayoutService, private messageService: MessageService) { }
+
+  ngOnInit() {
+  }
+
+
+  login() {
+    this.authService.checkLogin(this.email, this.password)
+      .then(user => {
+        if(user) {
+          this.authService.login(user);
+        }
+        else {
+          this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Login error', life: 3000 });
+        }
+      })
+  }
 }
