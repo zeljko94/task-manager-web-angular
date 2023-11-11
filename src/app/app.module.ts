@@ -32,6 +32,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { PickListModule } from 'primeng/picklist';
 import { CardModule } from 'primeng/card';
 import { BoardDetailsPageComponent } from './pages/board-details-page/board-details-page.component';
+import { TaskDetailsPageComponent } from './pages/task-details-page/task-details-page.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { BoardDetailsPageComponent } from './pages/board-details-page/board-deta
     ProjectsPageComponent,
     KanbanPageComponent,
     BoardDetailsPageComponent,
+    TaskDetailsPageComponent,
   ],
   imports: [
     BrowserModule,

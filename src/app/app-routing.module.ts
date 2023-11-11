@@ -7,6 +7,7 @@ import { UsersPageComponent } from './pages/admin/users/users-page/users-page.co
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { KanbanPageComponent } from './pages/kanban-page/kanban-page.component';
 import { BoardDetailsPageComponent } from './pages/board-details-page/board-details-page.component';
+import { TaskDetailsPageComponent } from './pages/task-details-page/task-details-page.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
       { path: 'kanban', component: KanbanPageComponent },
       { path: 'my-kanban', component: KanbanPageComponent },
       { path: 'board-details/:boardId', component: BoardDetailsPageComponent },
+      { path: 'task-details/:taskId', component: TaskDetailsPageComponent },
     ]
   }
 ];

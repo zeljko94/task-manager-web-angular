@@ -1,6 +1,7 @@
 import { OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { LayoutService } from './service/app.layout.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
     selector: 'app-menu',
@@ -10,7 +11,7 @@ export class AppMenuComponent implements OnInit {
 
     model: any[] = [];
 
-    constructor(public layoutService: LayoutService) { }
+    constructor(private authService: AuthService, public layoutService: LayoutService) { }
 
     ngOnInit() {
         this.model = [
@@ -171,5 +172,11 @@ export class AppMenuComponent implements OnInit {
             //     ]
             // }
         ];
+        
+        // this.authService.getLoggedInUser().then(loggedUser => {
+        //     if(loggedUser.role != 'admin') {
+        //         this.model.shift();
+        //     }
+        // });
     }
 }
