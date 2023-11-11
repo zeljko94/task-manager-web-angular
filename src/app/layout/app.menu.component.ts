@@ -20,7 +20,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Users', icon: 'pi pi-fw pi-users', routerLink: ['/users'] },
                     { label: 'Projects', icon: 'pi pi-fw pi-list', routerLink: ['/projects'] },
-                    { label: 'Boards', icon: 'pi pi-fw pi-clock', routerLink: ['/kanban'] }
+                    { label: 'Boards', icon: 'pi pi-fw pi-table', routerLink: ['/kanban'] }
                 ]
             },
             {
@@ -28,7 +28,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] },
                     { label: 'Projects', icon: 'pi pi-fw pi-list', routerLink: ['/my-projects'] },
-                    { label: 'Boards', icon: 'pi pi-fw pi-clock', routerLink: ['/my-kanban'] }
+                    { label: 'Boards', icon: 'pi pi-fw pi-table', routerLink: ['/my-kanban'] }
                 ]
             },
             // {
