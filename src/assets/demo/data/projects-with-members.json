@@ -1,0 +1,127 @@
+{
+    "data": [
+      {
+        "id": "dwkd2",
+        "name": "Project 1",
+        "members": [
+            {
+                "id": "L3n4i",
+                "username": "user1",
+                "password": "Test1234.",
+                "email": "user1@test.com",
+                "name": "User1",
+                "lastName": "User1",
+                "role": "user"
+              },
+              {
+                "id": "erqV0",
+                "username": "user2",
+                "password": "Test1234.",
+                "email": "user2@test.com",
+                "name": "User2",
+                "lastName": "User2",
+                "role": "user"
+              },
+              {
+                "id": "FVxmi",
+                "username": "user3",
+                "password": "Test1234.",
+                "email": "user3@test.com",
+                "name": "User3",
+                "lastName": "User3",
+                "role": "user"
+              }
+        ],
+        "boards": [
+          {
+            "id": "cwkd2",
+            "name": "Board 1",
+            "description": "Board 1 description",
+            "projectId": "dwkd2"
+          },
+          {
+              "id": "cwkd3",
+              "name": "Board 2",
+              "description": "Board 2 description",
+              "projectId": "dwkd2"
+          },
+          {
+              "id": "cwkd4",
+              "name": "Board 3",
+              "description": "Board 3 description",
+              "projectId": "dwkd2"
+          }
+        ]
+    },
+    {
+      "id": "dwkd3",
+      "name": "Project 2",
+      "members": [
+          {
+              "id": "L3n4i",
+              "username": "user1",
+              "password": "Test1234.",
+              "email": "user1@test.com",
+              "name": "User1",
+              "lastName": "User1",
+              "role": "user"
+            },
+            {
+              "id": "erqV0",
+              "username": "user2",
+              "password": "Test1234.",
+              "email": "user2@test.com",
+              "name": "User2",
+              "lastName": "User2",
+              "role": "user"
+            }
+      ],
+      "boards": [
+        {
+          "id": "cwkd5",
+          "name": "Board 1",
+          "description": "Board 1 description",
+          "projectId": "dwkd3"
+        },
+        {
+            "id": "cwkd6",
+            "name": "Board 2",
+            "description": "Board 2 description",
+            "projectId": "dwkd3"
+        }
+      ]
+  },
+  {
+    "id": "dwkd4",
+    "name": "Project 3",
+    "members": [
+          {
+            "id": "erqV0",
+            "username": "user2",
+            "password": "Test1234.",
+            "email": "user2@test.com",
+            "name": "User2",
+            "lastName": "User2",
+            "role": "user"
+          },
+          {
+            "id": "sgExA",
+            "username": "admin1",
+            "password": "Test1234.",
+            "email": "admin1@test.com",
+            "name": "Admin1",
+            "lastName": "Admin1",
+            "role": "admin"
+          }
+    ],
+    "boards": [
+      {
+        "id": "cwkd8",
+        "name": "Board 1",
+        "description": "Board 1 description",
+        "projectId": "dwkd4"
+      }
+    ]
+}
+    ]
+}

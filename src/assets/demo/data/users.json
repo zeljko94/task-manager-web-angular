@@ -1,0 +1,67 @@
+{
+    "data": [
+        {
+          "id": "sgExA",
+          "username": "admin1",
+          "password": "Test1234.",
+          "email": "admin1@test.com",
+          "name": "Admin1",
+          "lastName": "Admin1",
+          "role": "admin"
+        },
+        {
+          "id": "cx33j",
+          "username": "admin2",
+          "password": "Test1234.",
+          "email": "admin2@test.com",
+          "name": "Admin2",
+          "lastName": "Admin2",
+          "role": "admin"
+        },
+        {
+          "id": "L3n4i",
+          "username": "user1",
+          "password": "Test1234.",
+          "email": "user1@test.com",
+          "name": "User1",
+          "lastName": "User1",
+          "role": "user"
+        },
+        {
+          "id": "erqV0",
+          "username": "user2",
+          "password": "Test1234.",
+          "email": "user2@test.com",
+          "name": "User2",
+          "lastName": "User2",
+          "role": "user"
+        },
+        {
+          "id": "FVxmi",
+          "username": "user3",
+          "password": "Test1234.",
+          "email": "user3@test.com",
+          "name": "User3",
+          "lastName": "User3",
+          "role": "user"
+        },
+        {
+          "id": "jaGJP",
+          "username": "user4",
+          "password": "Test1234.",
+          "email": "user4@test.com",
+          "name": "User4",
+          "lastName": "User4",
+          "role": "user"
+        },
+        {
+          "id": "OkPaa",
+          "username": "user5",
+          "password": "Test1234.",
+          "email": "user5@test.com",
+          "name": "User5",
+          "lastName": "User5",
+          "role": "user"
+        }
+      ]
+}
