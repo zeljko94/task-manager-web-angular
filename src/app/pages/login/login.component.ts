@@ -35,7 +35,7 @@ export class LoginComponent {
           this.authService.login(user);
         }
         else {
-          this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Login error', life: 3000 });
+          this.messageService.add({ key: 'login', severity: 'error', summary: 'Error', detail: 'Login error', life: 1000 });
         }
       })
   }
